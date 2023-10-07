@@ -2,7 +2,7 @@ import React from 'react';
 import memberIcon from "../utils/memberIcon.svg"
 import callIcon from "../utils/callIcon.svg"
 import reportIcon from "../utils/reportIcon.svg"
-// import threeDotIcon from "../utils/threeDotIcon.svg" 
+
 
 
 const Profile = ({ active_backgound, text_light, item }) => {

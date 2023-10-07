@@ -1,17 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Left from "./left";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-// import editIcon from "../utils/editIcon.svg"
-// import sendIcon from "../utils/sendIcon.svg"
-// import clipIcon from "../utils/clipIcon.svg"
-// // import cameraIcom from "../utils/cameraIcom"
-// // import cardIcon from "../utils/cardIcon"
-// import vcall from "../utils/vcall.svg"
-
 import Profile from "./Profile";
 import '../styles/MainScreen.css';
 import Chat from './Chat';
-
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
@@ -85,11 +77,9 @@ const MainScreen = () => {
         <div className='container-fluid'>
             <div className='row h-100'>
 
-
-
-                <div className='col-3 bg-dark d-lg-block d-none'>
+                {/* <div className='col-3 bg-dark d-lg-block d-none'>
                     <Left data={data} />
-                </div>
+                </div> */}
 
 
                 <div className='col-12 col-lg-9 px-3 chat-screen-bg'>
@@ -100,9 +90,9 @@ const MainScreen = () => {
                             <h1>{data?.name}</h1>
                         </div>
 
-                        <div>
-                            {/* <div className='mx-2'><img src={editIcon} alt="editIcon" /></div> */}
-                        </div>
+                        {/* <div>
+                            <div className='mx-2'><img src={editIcon} alt="editIcon" /></div>
+                        </div> */}
 
                     </div>
 
@@ -130,7 +120,7 @@ const MainScreen = () => {
                             <>
                                 <div className='message-date'>
                                     <div className='date translate-middle top-0 start-50'>
-                                        {/* <p>{formatDate(chats[scrollbottom]?.time)}</p> */}
+                                        <p>{formatDate(chats[scrollbottom]?.time)}</p>
                                     </div>
                                     <div className='date_line' />
                                 </div>
@@ -146,10 +136,10 @@ const MainScreen = () => {
                     <div className='position-relative'>
                         <div className={`pop_over ${toggle ? "d-flex" : "d-none"} justify-content-around align-items-center`}>
                             <div className='arrow' />
-                            {/* <img src={cameraIcom} alt="camera" /> */}
-                            {/* <img src={vcallIcon} alt="vcallicon" /> */}
-                            {/* <img src={cardIcon} alt="camera" /> */}
-                        </div>
+                            {/* <img src={cameraIcom} alt="camera" />
+                            <img src={vcall} alt="vcall" /> 
+                            <img src={cardIcon} alt="camera" />  */}
+                            </div>
                         <input type="text" className="form-control my-2" placeholder='Reply to @rohit' />
                         <div className='input_icon'>
                             {/* <span onClick={() => setToggle(!toggle)} className='cursor-pointer mx-2 data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"'><img src={clipIcon} alt="clipIcon" /></span>
