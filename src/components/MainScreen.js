@@ -7,6 +7,16 @@ import Chat from './Chat';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
+//ICONS//
+
+import editIcon from '../utils/editIcon.svg';
+import IconCamera from '../utils/IconCamera.svg';
+import vcall from '../utils/vcall.svg';
+import cardIcon from '../utils/cardIcon.svg';
+import clipIcon from '../utils/clipIcon.svg';
+import sendIcon from '../utils/sendIcon.svg';
+
+
                                                                                                                                                           
 
 const MainScreen = () => {
@@ -70,6 +80,7 @@ const MainScreen = () => {
             setScrollbottom(scrollbottom + 1)
         }
     };
+    console.log(data);
 
 
 
@@ -87,12 +98,13 @@ const MainScreen = () => {
                     <div className='d-flex justify-content-between align-items-center my-3'>
                         <div className='d-flex align-items-center'>
                             <span className='me-2'><AiOutlineArrowLeft style={{ fontSize: "22px" }} /></span>
-                            <h1>{data?.name}</h1>
+                            
+                            <h1>{data?.name}</h1>  
                         </div>
 
-                        {/* <div>
+                        <div>
                             <div className='mx-2'><img src={editIcon} alt="editIcon" /></div>
-                        </div> */}
+                        </div>
 
                     </div>
 
@@ -134,17 +146,21 @@ const MainScreen = () => {
 
 
                     <div className='position-relative'>
+
                         <div className={`pop_over ${toggle ? "d-flex" : "d-none"} justify-content-around align-items-center`}>
+                            
                             <div className='arrow' />
-                            {/* <img src={cameraIcom} alt="camera" />
+                            <img src={IconCamera} alt="camera" />
                             <img src={vcall} alt="vcall" /> 
-                            <img src={cardIcon} alt="camera" />  */}
+                            <img src={cardIcon} alt="camera" /> 
                             </div>
+
                         <input type="text" className="form-control my-2" placeholder='Reply to @rohit' />
                         <div className='input_icon'>
-                            {/* <span onClick={() => setToggle(!toggle)} className='cursor-pointer mx-2 data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"'><img src={clipIcon} alt="clipIcon" /></span>
-                            <span className='mx-2'><img src={sendIcon} alt="sendIcon" /></span> */}
+                            <span onClick={() => setToggle(!toggle)} className='cursor-pointer mx-2 data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"'><img src={clipIcon} alt="clipIcon" /></span>
+                            <span className='mx-2'><img src={sendIcon} alt="sendIcon" /></span>
                         </div>
+
                     </div>
 
 

@@ -1,4 +1,7 @@
 import React from 'react';
+
+//ICONS//
+import threeDotIcon from '../utils/threeDotIcon.svg'
 import memberIcon from "../utils/memberIcon.svg"
 import callIcon from "../utils/callIcon.svg"
 import reportIcon from "../utils/reportIcon.svg"
@@ -20,7 +23,7 @@ const Profile = ({ active_backgound, text_light, item }) => {
                 <h2 className={`${text_light}`}>To : <span className={`text_bold ${text_light}`}>{item?.to}</span>  </h2>
             </div>
             <div className='mx-2 ms-auto cursor-pointer position-relative dropdown'>
-                {/* <span className={`${text_light} ps-3`} style={{ padding: "1rem 0" }}><img src={threeDotIcon} alt="threeDotIcon" /></span> */}
+                <span className={`${text_light} ps-3`} style={{ padding: "1rem 0" }}><img src={threeDotIcon} alt="threeDotIcon" /></span>
                 <div className={`menu_option position-absolute dropdown-menu`}>
                     <p className='menu_bottom_line d-flex align-items-center font-size14'><span className='px-2'><img src={memberIcon} alt="memberIcon" /></span>Member</p>
                     <p className='menu_bottom_line d-flex align-items-center font-size14'><span className='px-2'><img src={callIcon} alt="callIcon" /></span>Share Number</p>
