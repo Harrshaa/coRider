@@ -1,45 +1,27 @@
-import React from 'react';
-import Profile from './Profile';
+import React from 'react'
 
-// import { LuSearch, LuEdit} from 'react-icons/lu';
-// import { HiDotsHorizontal } from 'react-icons/hi';
+import timeIcon from'../utils/timeIcon.svg'
+import batteryIcon from'../utils/batteryIcon.svg'
+import signalIcon from'../utils/signalIcon.svg'
+import wifiIcon from'../utils/wifiIcon.svg'
 
 
+const left = () => {
+  return (
 
-const Left = ({data}) => {
-    return (
+ 
+
+    // <div className='float-right justify-content-end align-items-end ml-auto'>
+    //                         <span className='mx-2 p-0'><img src={signalIcon} alt="signalIcon" /></span>
+    //                         <span className='mx-2'><img src={wifiIcon} alt="wifiIcon" /></span>
+    //                         <span className='mx-2'><img src={batteryIcon} alt="batteryIcon" /></span>
+    // </div>
+    <div></div>
+
     
-            <div className='d-flex justify-content-between align-items-center py-3 px-1'>
-                
-                <div className='d-flex align-items-center'>
-                
-                    <h1 className='px-2 text-light'>Chats</h1>
-                </div>
-{/* 
-                <div className='d-flex'>
-                    <div className='mx-2 text-light'><LuEdit /></div>
-                    <div className='mx-2 text-light'><HiDotsHorizontal /></div>
-                </div>
-            
+    
 
-           
-            
-            <div className='position-relative px-1'>
-                <input type="text" className="form-control form-control-sm input_bottom_line" placeholder='Search or start new chat' />
-                <span className='text-dark position-absolute top-0 end-0 mx-2 bg-light'> <LuSearch /> </span>
-            </div> */}
+  );
+}
 
-         
-        
-                
-                
-            {/* <Profile item={data} active_backgound={"active_backgound"} text_light={'text-light'}/> */}
-            
-            
-            </div>
-            
-        
-    );
-};
-
-export default Left;
+export default left

@@ -54,7 +54,7 @@
 
 .menu_option {
     background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
     border-radius: 7px;
     padding: 10px;
     width: 9.75rem;
@@ -63,12 +63,13 @@
 }
 
 .dropdown:hover>.dropdown-menu {
-    display: flex;
+    display: table-column;
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 7px;
     padding: 10px;
-    width: 9.75rem;
+    width: 130 px;
+    height: 200px;
     top: 2rem;
     right: 1px;
     margin-top: 0.125em;

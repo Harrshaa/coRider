@@ -88,23 +88,21 @@ const MainScreen = () => {
         <div className='container-fluid'>
             <div className='row h-100'>
 
-                {/* <div className='col-3 bg-dark d-lg-block d-none'>
-                    <Left data={data} />
-                </div> */}
+                <div className='left'>
+                    <Left  />
+                </div>
 
 
                 <div className='col-12 col-lg-9 px-3 chat-screen-bg'>
 
                     <div className='d-flex justify-content-between align-items-center my-3'>
                         <div className='d-flex align-items-center'>
-                            <span className='me-2'><AiOutlineArrowLeft style={{ fontSize: "22px" }} /></span>
-                            
+                            <span className='me-2'><AiOutlineArrowLeft style={{ fontSize: "22px" }} /></span>                            
                             <h1>{data?.name}</h1>  
                         </div>
-
-                        <div>
-                            <div className='mx-2'><img src={editIcon} alt="editIcon" /></div>
-                        </div>
+        
+                        <div className='mx-2'><img src={editIcon} alt="editIcon" /></div>
+                    
 
                     </div>
 
