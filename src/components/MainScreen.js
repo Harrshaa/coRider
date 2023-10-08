@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Left from "./left";
+
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Profile from "./Profile";
 import '../styles/MainScreen.css';
@@ -88,9 +88,7 @@ const MainScreen = () => {
         <div className='container-fluid'>
             <div className='row h-100'>
 
-                <div className='left'>
-                    <Left  />
-                </div>
+               
 
 
                 <div className='col-12 col-lg-9 px-3 chat-screen-bg'>
