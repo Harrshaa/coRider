@@ -8,10 +8,20 @@ import reportIcon from "../utils/reportIcon.svg"
 
 
 
+
 const Profile = ({ active_backgound, text_light, item }) => {
     const {chats}=item
     return (
+
+    
+
+
+
         <div className={`py-1 mt-3 mb-1 d-flex align-items-center px-1 ${active_backgound}`}>
+
+        
+
+
             <span className='collage'>
                 <img className='contact_profile_photo1' src={chats?chats[0]?.sender?.image:""} alt="profile_photo" />
                 <img className='contact_profile_photo2' src={chats?chats[1]?.sender?.image:""} alt="profile_photo" />

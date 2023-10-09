@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Profile from "./Profile";
+// import Left from './Left';
 import '../styles/MainScreen.css';
 import Chat from './Chat';
 import axios from 'axios';
@@ -16,6 +17,10 @@ import cardIcon from '../utils/cardIcon.svg';
 import clipIcon from '../utils/clipIcon.svg';
 import sendIcon from '../utils/sendIcon.svg';
 
+import iphoneBattery from'../utils/iphoneBattery.svg'
+import iphoneTime from'../utils/iphoneTime.svg'
+
+
 
                                                                                                                                                           
 
@@ -24,8 +29,8 @@ const MainScreen = () => {
     const [chats, setChats] = useState([]);
     const [toggle, setToggle] = useState(false);
     const [data, setdata] = useState([]);
-    const [scrollbottom, setScrollbottom] = useState(0);
-    const [page, setPage] = useState(1);
+    const [scrollbottom, setScrollbottom] = useState(1);
+    const [page, setPage] = useState(0);
     const chatBoxRef = useRef(null);
 
 
@@ -86,12 +91,16 @@ const MainScreen = () => {
 
     return (
         <div className='container-fluid'>
-            <div className='row h-100'>
-
-               
+            <div className='row h-100'>  
 
 
                 <div className='col-12 col-lg-9 px-3 chat-screen-bg'>
+                   
+                   <div className=' d-flex justify-content-between align-items-center  my-4 ' >
+                   <span className='mx-3 my-1 p-0 float-left'><img src={iphoneTime} alt="iphoneTime" /></span>
+                   <span className='mx-2 my-1  '><img src={iphoneBattery} alt="iphoneBattery" /></span>                            
+                           
+                    </div>   
 
                     <div className='d-flex justify-content-between align-items-center my-3'>
                         <div className='d-flex align-items-center'>
